@@ -7,6 +7,7 @@ import styled from "styled-components";
 import {createGlobalStyle} from "styled-components";
 import Zoom from "react-reveal/Zoom";
 import InfiniteScroll from 'react-infinite-scroll-component';
+import { ApiKey } from './API';
 //style
 const GlobalStyle = createGlobalStyle`
 
@@ -41,10 +42,10 @@ function App() {
   },[])
   const fetchImages =() =>{
     const apiRoot ="https://api.unsplash.com";
-    const accessKey = process.env.REACT_APP_ACCESSKEY;
+    // const accessKey = process.env.REACT_APP_ACCESSKEY;
     
     axios
-    .get(`${apiRoot}/photos/random?client_id=${accessKey}&count=10`)
+    .get(`${apiRoot}/photos/random?client_id=${ApiKey}&count=10`)
     .then(res =>setImages([...images, ...res.data])
     )
   }
