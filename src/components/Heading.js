@@ -27,8 +27,8 @@ color:tomato
 export const  Heading = () => {
     return (
         <Header>
-            <H1> DinhApi <span style={{color:"#61dafb"}}>❖</span> Images </H1>
-            <p>This Website create with reactJS for see any images, like and can dowload it 💕</p>
+            <H1> Vdz <span style={{color:"#61dafb"}}>❖</span> Images </H1>
+            <p>💕</p>
             <br/>
             <H6> You can watch the picture <span style={{color:"#00e59b"}}>forever</span> without breaking </H6>
             
